@@ -1,0 +1,36 @@
+<!-- simulation/templates/form.html -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Monte Carlo Simulator for PI Value</h2>
+    <form action="{% url 'simulate' %}" method="post">
+      {% csrf_token %}
+      <label for="iterations">Number of iterations:</label><br>
+      <input type="number" id="iterations" name="iterations" min=1 required><br>
+      <input type="submit" value="Start Simulation">
+    </form> 
+    <h2>The Theory to Determine the PI value</h2>
+    <h4>
+      The Monte Carlo method for estimating pi is based on the idea that if you randomly scatter points inside a square and count the number of points that fall inside a circle inscribed in the square, you can estimate the value of pi. The algorithm for this method is straightforward:
+    </h4>
+    <li>
+      Generate a random point (x, y) inside a square of side 2 centered at the origin.
+    </li>
+    <li>
+      Determine whether the point falls inside the unit circle inscribed in the square by checking whether x² + y² <= 1.
+    </li>
+    <li>
+      Repeat steps 1 and 2 for a large number of points (e.g., 10⁷).
+    </li>
+    <li>
+      Calculate the ratio of the number of points that fell inside the circle to the total number of points generated.
+    </li>
+    <li>
+      Multiply the ratio by 4 to estimate the value of pi.
+    </li>
+    <h4>   
+      The Monte Carlo method works because the probability of a point falling inside the circle is proportional to the area of the circle, which is pi. Therefore, by counting the number of points that fall inside the circle, we can estimate the value of pi.
+    </h4>
+    <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*6jg0_wrHGPR7Rfa0f6a_CQ.png" alt="from medium.com"/>
+  </body>
+</html>
