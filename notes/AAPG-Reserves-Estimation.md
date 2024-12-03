@@ -32,7 +32,7 @@ Volumetric estimates of OOIP and OGIP are based on a geological model that g
 
 One basic volumetric equation is
 
-        $\Large OOIP = 7758 * A * h * \phi * (1 - S_w) / B_{oi}$
+$\Large OOIP = 7758 * A * h * \phi * (1 - S_w) / B_{oi}$
 
 where 
 
@@ -56,7 +56,7 @@ Note:
 
 Another basic volumetric equation is:
 
-        $\Large OGIP = 43560 * A * h * \phi * (1 - S_w) / B_{gi}$
+$\Large OGIP = 43560 * A * h * \phi * (1 - S_w) / B_{gi}$
 
 where
 
@@ -66,7 +66,7 @@ where
 
 $Recoverable\ Reserves$ are a fraction of the OOIP or OGIP and are dependent on the efficiency of the reservoir drive mechanism. The basic equation used to calculate recoverable oil reserves is
 
-        $\Large Recoverable\ Oil\ Reserves\ (STB)\ =\ OOIP\ *\ RF$
+$\Large Recoverable\ Oil\ Reserves\ (STB)\ =\ OOIP\ *\ RF$
 
 where RF = recovery factor, which equals $RF_P$ + $RF_S$
 
@@ -85,7 +85,7 @@ The primary recovery factor, $RF_P$, is estimated from the type of drive mechani
 
 The secondary recovery factor, RFS, is determined by formula:
 
-            $RF_S = E_D * E_A * E_V$
+$RF_S = E_D * E_A * E_V$
 
 where
 
@@ -97,7 +97,7 @@ These efficiency terms are influenced by such factors as residual oil saturation
 
 The basic equation to calculate recoverable gas reserves is
 
-    $\Large Recoverable\ Gas\ Reserves\ (SCF)\ =\ OGIP\ *\ RF$
+$\Large Recoverable\ Gas\ Reserves\ (SCF)\ =\ OGIP\ *\ RF$
 
 In this case, the recovery factor (RF) is typically higher than for oil reservoirs; it is often near unity for dry gas reservoirs.
 
@@ -171,11 +171,11 @@ The equations used to calculate OGIP are
 
 *Gas reservoir with active water drive*:
 
-        $\Large OGIP = \frac{G_pB_g-(W_e-W_pB_w)}{B_g-B_{gi}}$
+$\Large OGIP = \frac{G_pB_g-(W_e-W_pB_w)}{B_g-B_{gi}}$
 
 *Gas reservoir with no water drive* (*We* = *0*):
 
-        $\Large OGIP = \frac{G_pB_g+(W_pB_w)}{B_g-B_{gi}}$
+$\Large OGIP = \frac{G_pB_g+(W_pB_w)}{B_g-B_{gi}}$
 
 where
 
